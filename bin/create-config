@@ -68,8 +68,9 @@ function createConfig() {
     },
     mail: {
       transport: 'SMTP',
+      from:"hello@actea.io",
       options: {
-        service: 'Mailgun',
+        service: 'Gmail',
         auth: {
           user: process.env.MAILGUN_SMTP_LOGIN,
           pass: process.env.MAILGUN_SMTP_PASSWORD
